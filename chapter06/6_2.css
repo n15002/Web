@@ -1,0 +1,20 @@
+#bg {
+    background-image:url(../image/water.gif) ;
+}
+
+h2 {
+    padding:10px ;
+    color:navy ;
+    background-color:#6699FF ;
+}
+
+p {
+    font-size:9pt ;
+    margin:10px 10px 10px 70px ;
+}
+
+.special {
+    padding:10px ;
+    color:#6699FF ;
+    background-color:navy ;
+}
