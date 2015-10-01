@@ -15,29 +15,58 @@ justify-content: center;
 #nav{
 flex-direction: column;
 }
-    #nav>a{
-    text-align: center;
+
+.icon-button>a{
+text-align: center;
+border-radius: 50%;
+padding: 5px;
+overflow: hidden; /* Webfont‚ªborder‚ð’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é */
+}
+    #nav.icon-button>a{
     color: white; /* Webfont */
-    border-radius: 50%;
-    padding: 5px;
-    overflow: hidden; /* Webfont‚ªborder‚ð’´‚¦‚È‚¢‚æ‚¤‚É‚·‚é */
-    margin-top: 10px;
     flex-basis: 5em;
+    margin-top: 10px;
     }
-    #nav>a:first-child{
-    margin-top: 0;
+        #nav>a:first-child{
+        margin-top: 0;
+        }
+    #sns.icon-button{
+    text-align: center;
     }
+        #sns.icon-button>a{
+        margin-right: 10px;
+        }
+    #sns.icon-button>a:nth-child(1){
+    color: black;
+    }
+    #sns.icon-button>a:nth-child(2){
+    color: aqua;
+    }
+    #sns.icon-button>a:nth-child(3){
+    color: crimson;
+    }
+
 
 #content{
 width: 600px;
 border: solid 3px dimgray;
 border-radius: 1em;
 }
-    #content>table>tr>td:first-child{
+    #content td:first-child{
     text-align: right;
     border-right: groove;
     font-weight: bold;
     }
+    #content>h2{
+    border-bottom: dashed 2px gray;
+    text-align: center;
+    }
+        #content>h2::before{
+        content: '>';
+        }
+        #content>h2::after{
+        content: '_';
+        }
 
 #footer{
 color: darkgray;
